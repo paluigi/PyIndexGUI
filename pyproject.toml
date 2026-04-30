@@ -1,0 +1,28 @@
+[project]
+name = "pyindexgui"
+version = "0.1.0"
+description = "GUI for the PyIndexNum economic index number library"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Luigi Palumbo" }
+]
+dependencies = [
+    "flet>=0.84.0",
+    "pyindexnum>=0.1.1",
+]
+
+[dependency-groups]
+dev = [
+    "flet-cli>=0.84.0",
+    "flet-desktop-light>=0.80.4",
+]
+
+[tool.flet]
+org = "com.mycompany"
+product = "pyindexgui"
+company = "Flet"
+copyright = "Copyright (C) 2023-2026 by Flet"
+
+[tool.flet.app]
+path = "src"
