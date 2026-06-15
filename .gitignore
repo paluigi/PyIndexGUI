@@ -166,3 +166,4 @@ cython_debug/
 storage/
 
 .claude/*
+!uv.lock
