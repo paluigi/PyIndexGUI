@@ -51,6 +51,9 @@ coverage.xml
 .pytest_cache/
 cover/
 
+# Editor / agent tooling state
+.kilo/
+
 # Translations
 *.mo
 *.pot

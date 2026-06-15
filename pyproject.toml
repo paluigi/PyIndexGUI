@@ -4,25 +4,54 @@ version = "0.1.0"
 description = "GUI for the PyIndexNum economic index number library"
 readme = "README.md"
 requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
 authors = [
-    { name = "Luigi Palumbo" }
+    { name = "Luigi Palumbo and Mengting Yu" }
+]
+keywords = ["index", "indices", "price index", "price indices", "index numbers", "economics", "statistics"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business",
+    "Topic :: Scientific/Engineering :: Information Analysis",
 ]
 dependencies = [
     "flet>=0.84.0",
-    "pyindexnum>=0.1.1",
+    "pyindexnum>=0.2.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/paluigi/PyIndexGui"
+Documentation = "https://pyindexgui.readthedocs.io/"
+Repository = "https://github.com/paluigi/PyIndexGui"
+Issues = "https://github.com/paluigi/PyIndexGui/issues"
+Changelog = "https://github.com/paluigi/PyIndexGui/releases"
 
 [dependency-groups]
 dev = [
     "flet-cli>=0.84.0",
     "flet-desktop-light>=0.80.4",
+    "pytest>=9.1.0",
 ]
 
 [tool.flet]
-org = "com.mycompany"
 product = "pyindexgui"
-company = "Flet"
-copyright = "Copyright (C) 2023-2026 by Flet"
+copyright = "Copyright (C) 2023-2026 by Luigi Palumbo and Mengting Yu"
 
 [tool.flet.app]
 path = "src"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

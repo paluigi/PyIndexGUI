@@ -1,0 +1,51 @@
+site_name: PyIndexGUI
+site_description: A desktop GUI for the PyIndexNum economic index number library.
+site_author: Luigi Palumbo and Mengting Yu
+repo_url: https://github.com/paluigi/PyIndexGUI
+repo_name: paluigi/PyIndexGUI
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - content.code.copy
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Running the App: running.md
+  - User Guide:
+      - Overview: user-guide/index.md
+      - Data Import: user-guide/data-import.md
+      - Aggregation: user-guide/aggregation.md
+      - Panel Balancing: user-guide/panel-balancing.md
+      - Index Calculation: user-guide/index-calculation.md
+      - Export: user-guide/export.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - tables
+  - toc:
+      permalink: true

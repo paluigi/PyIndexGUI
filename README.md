@@ -9,8 +9,9 @@ The app exposes the full PyIndexNum pipeline through a tabbed interface:
 1. **Data Import** — Load CSV/Excel files, map columns to standard names, standardize data types
 2. **Aggregation** — Aggregate time series data by frequency (daily, weekly, monthly, etc.) with configurable aggregation methods
 3. **Panel Balancing** — Remove unbalanced products or apply carry-forward/backward imputation
-4. **Index Calculation** — Compute bilateral indices (Jevons, Carli, Dutot, Laspeyres, Paasche, Fisher, Tornqvist, Walsh) and multilateral indices (GEKS-Fisher, GEKS-Tornqvist, Geary-Khamis, Time Product Dummy)
+4. **Index Calculation** — Compute bilateral indices (Jevons, Carli, Dutot, Laspeyres, Paasche, Fisher, Tornqvist, Walsh) and multilateral indices (GEKS-Jevons, GEKS-Fisher, GEKS-Tornqvist, Geary-Khamis, Time Product Dummy)
 5. **Export** — Export results and balanced panels to CSV or Excel
+6. **Info** — Version, authors, copyright, and a link to the GitHub repository
 
 ## Run
 
@@ -24,6 +25,12 @@ uv run flet run
 flet build linux -v
 ```
 
+## Documentation
+
+Full documentation is available on [ReadTheDocs](https://pyindexgui.readthedocs.io/). It is built with MkDocs (Material theme); see [`docs/`](docs/) and [`mkdocs.yml`](mkdocs.yml) for the source.
+
 ## Change Log
 
 - **0.1.0** — Complete rewrite: OOP architecture, full PyIndexNum pipeline integration, 5-tab UI, bilateral and multilateral index calculation, export support.
+- Added an **Info** tab showing version, authors, copyright, and a link to the GitHub repository.
+- Added MkDocs documentation (Material theme) for ReadTheDocs covering installation, running, and the full GUI workflow.
